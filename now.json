@@ -1,5 +1,13 @@
 {
-    "name": "redirect",
-    "version": 2,
-    "builds": [{ "src": "index.js", "use": "@now/node-server" }]
+  "name": "redirect",
+  "version": 2,
+  "alias": "www.remote.one",
+  "builds": [{ "src": "index.html", "use": "@now/static" }],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "status": 301,
+      "headers": { "Location": "https://remote.one/$1" }
+    }
+  ]
 }
