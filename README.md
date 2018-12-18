@@ -13,3 +13,5 @@ And then `now alias` to alias it.
 The example redirects `www` traffic to the naked domain ([remote.one](https://remote.one)).
 
 NB: this is a copy of https://github.com/zeit/now-examples/tree/master/redirect but I couldn't find it when searching so I made this a solo repo.
+
+MIT
